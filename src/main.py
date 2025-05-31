@@ -4,8 +4,9 @@ from src.database import create_tables
 
 app = FastAPI()
 
-# Ensure the database tables are created at startup
-create_tables()
+@app.get("/")
+def root():
+    return {"message": "Bienvenido a la API de productos de la tienda"}
 
-# Include the product router
+create_tables()
 app.include_router(product_router)
