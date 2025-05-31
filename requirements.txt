@@ -1,0 +1,8 @@
+# This file is used to install the required Python packages for the project.
+# Use the command `pip install -r requirements.txt` to install all dependencies.
+# List of required packages
+fastapi 
+uvicorn 
+sqlalchemy 
+pydantic
+pytest
